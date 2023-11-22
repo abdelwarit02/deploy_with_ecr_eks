@@ -4,6 +4,7 @@ on:
   push:
     branches: [master]
 
+
 env:
   ECR_REPOSITORY: myecr
   EKS_CLUSTER_NAME: mydemo
