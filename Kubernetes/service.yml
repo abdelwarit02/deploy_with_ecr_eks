@@ -1,12 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-app-service
+  name: react-app-service
 spec:
   selector:
-    app: hello-app
+    app: react-app
+  sessionAffinity: None
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 80
+      targetPort: 3000
   type: LoadBalancer
